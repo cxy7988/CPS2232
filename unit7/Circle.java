@@ -1,6 +1,8 @@
-package unit5;
+package unit7;
 
-class Circle extends GeometricObject{
+import unit7.GeometricObject;
+
+class Circle extends GeometricObject {
     private double radius;
 
     public Circle(){
@@ -25,10 +27,12 @@ class Circle extends GeometricObject{
         this.radius = radius;
     }
 
+    @Override
     public double getArea(){
         return Math.PI * Math.pow(radius, 2);
     }
 
+    @Override
     public double getPerimeter(){
         return 2 * Math.PI * radius;
     }

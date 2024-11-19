@@ -1,6 +1,6 @@
-package unit5;
+package unit7;
 
-public class Rectangle extends GeometricObject{
+public class Rectangle extends GeometricObject {
     private double width;
     private double length;
 
@@ -37,16 +37,18 @@ public class Rectangle extends GeometricObject{
         this.length = length;
     }
 
+    @Override
     public double getArea(){
         return width*length;
     }
 
-    public double getPrimeter(){
+    @Override
+    public double getPerimeter(){
         return (width+length)*2;
     }
 
     @Override
     public String toString(){
-        return "The rectangle is created"+ getDateCreated() + " , the area is " + getArea() +" and the primeter is " + getPrimeter();
+        return "The rectangle is created"+ getDateCreated() + " , the area is " + getArea() +" and the primeter is " + getPerimeter();
     }
 }
